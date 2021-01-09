@@ -64,27 +64,3 @@ char *_strchr(char *str, int chr)
 
 	return (NULL);
 }
-
-/* int main(void)
-{
-	FILE *stream = fopen("test_file", "r");
-	ssize_t num_of_chars;
-	size_t n = 0;
-	char *lineptr = NULL;
-	int i = 0;
-
-	if (stream == NULL)
-	{
-		return (0);
-	}
-
-	num_of_chars = _getline(&lineptr, &n, stream);
-
-	while (num_of_chars != -1 && i++ < 100)
-	{
-		printf("%s", lineptr);
-		num_of_chars = _getline(&lineptr, &n, stream);
-	}
-	free(lineptr);
-	return fclose(stream);
-} */
